@@ -9,7 +9,7 @@ set -e
 nlines_cred=`docker ps -a | grep gdrive_cred_cont | wc -l`
 if [ "$nlines_cred" -eq "0" ]
 	then echo "gdrive_cred_cont doesn't exist. We create it first." && \
-		docker run cred_image true
+		docker run --name gdrive_cred_cont gdrive_cred_image true
 fi
 
 nlines_core=`docker ps -a | grep gdrive_core_cont | wc -l`

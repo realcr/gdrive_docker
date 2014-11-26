@@ -24,6 +24,8 @@ docker run -it --name gdrive_core_cont \
 	--volumes-from gdrive_cred_cont \
 	gdrive_core_image /root/gocode/bin/drive init /root/gdrive
 
+# Remove the gdrive_core_cont container:
+docker rm -f gdrive_core_cont
 
 # Unset abort on failure:
 set +e

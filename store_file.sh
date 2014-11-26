@@ -44,7 +44,7 @@ container_dest_dir=/root/gdrive/${DEST_DIR}/
 
 # Interactive script to generate credentials:
 # (User has to open his browser to get the code back)
-docker run -it --name gdrive_core_cont \
+docker run --name gdrive_core_cont \
 	-v $(readlink -f $FILE_TO_STORE):${container_dest_file} \
 	--volumes-from gdrive_cred_cont \
 	gdrive_core_image \

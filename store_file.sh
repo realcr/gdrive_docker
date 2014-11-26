@@ -13,7 +13,7 @@ DEST_DIR=$2
 
 prog_name=`basename $0`
 
-if [ "$#" -ne 2 ]; then
+if [ "$#" -ne "2" ]; then
 	echo "Usage: $prog_name file_to_store dest_dir"
 	exit
 fi

@@ -1,6 +1,13 @@
 #!/usr/bin/env bash
 
-# Store a file in google drive, at inside a specific directory.
+# Store a file in google drive, at inside a specific directory.  
+# NOTE: This will not store a file if the full path (All the directories) are
+# not built already at the google drive's side. 
+
+# This script relies on the "drive" tools, which has a sync mindset. It doesn't
+# just let you throw in files, or create random folders. You can only sync
+# google drive to your current state, or sync your state to google drive's
+# state.
 
 # Abort on failure:
 set -e

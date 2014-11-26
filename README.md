@@ -36,3 +36,10 @@ your google drive, run the following command:
 
 Congratulations, you stored a file on your google drive.
 
+## Known issues
+
+You can not store a file to a location that is not present at the Google
+drive's side. As an example, if you want to store a file to location /a/b/c
+inside google drive, and the folders b and c do not exist, you will not be able
+to store the file /a/b/c/my_file.txt. You have to make sure somehow that the
+path /a/b/c exists before trying to save my_file.txt to that path.
